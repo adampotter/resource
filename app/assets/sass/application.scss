@@ -50,7 +50,9 @@
     content: "◂ "; }
 
 
-
+.form-group-day .form-control, .form-group-month .form-control {
+    width: 100%;
+}
 // Tabs
 
 .tabs-nav {
@@ -263,5 +265,37 @@
   border-bottom: none;
 }
 
+.action {
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 7px;
+  background: #00823b;
+  border: solid #1f628d 0px;
+  text-decoration: none;
+}
 
+.btn:hover {
+  background: #ffbf47;
+  text-decoration: none;
+}
 
+.form-group {
+    margin-bottom: 30px;
+}
+
+fieldset {
+    width: 100%;
+}
+
+.form-date .form-group {
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+    margin-bottom: 0;
+    clear: none;
+}
+
+.form-date .form-group-year {
+    width: 150px;
+}
