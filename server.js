@@ -16,7 +16,7 @@ if (env === 'production') {
     console.log('Username or password is not set, exiting.');
    // process.exit(1);
   }
-  app.use(express.basicAuth(username, password));
+//  app.use(express.basicAuth(username, password));
 }
 
 // Application settings
