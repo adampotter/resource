@@ -1,0 +1,204 @@
+{{<layout}}
+
+{{$pageTitle}}
+  GOV.UK prototyping kit
+{{/pageTitle}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_navigation}}
+{{/propositionHeader}}
+
+{{$content}}
+
+
+<main id="content" role="main">
+
+ <div class="grid-row">        
+
+         <div class="column-quarter grid-col" style="padding-bottom:90px; padding-top:30px; margin-left:-40px">
+              <ul class="main-nav">
+                <li id="nav-home"><a href="logged_in">Home</a></li>
+                <li id="nav-demand"><a href="demand">Demand log</a></li>
+                <li id="nav-demand"><a href="demand">Assigned</a></li>
+                <li id="nav-assigned" class="selected"><a href="unassigned">Unassigned</a></li>
+                <li id="nav-projects"><a href="#">Current projects</a></li>
+                <li id="nav-reports"><a href="#">Reports</a></li>
+              </ul>
+          </div>
+
+  <!-- Start three quarters container for main content columns -->
+  <div class="column-three-quarters">
+
+
+        <p class="font-xsmall bread"><a href="logged_in">Home</a>&nbsp;>&nbsp;Unassigned resource</p> 
+
+         <h1 class="heading-large">&nbsp;&nbsp;Unassigned resource</h1>
+
+      <ul class="tabs">
+            <li class="selected"><a href="#">Basic search</a></li>
+            <li><a class="disabled" href="#">Edit record</a></li>
+         </ul> 
+
+ <div class="column-half">   
+
+        <br>
+
+
+              <div class="form-group">
+                <label class="form-label" for="grade">Grade</label>
+                    <select class="select form-control">
+                      <option>-- Please make a selection --</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="seo">SEO</option>
+                      <option value="heo">HEO</option>
+                      <option value="eo">EO</option>
+                    </select> 
+            </div> 
+
+              <div class="form-group">
+                <label class="form-label" for="fte">FTE</label>
+                    <select class="select form-control">
+                      <option>-- Please make a selection --</option>
+                      <option value="1">1</option>
+                      <option value="0.9">0.9</option>
+                      <option value="0.8">0.8</option>
+                      <option value="0.7">0.7</option>
+                      <option value="0.6">0.6</option>
+                      <option value="0.5">0.5</option>
+                      <option value="0.4">0.4</option>
+                      <option value="0.3">0.3</option>
+                      <option value="0.2">0.2</option>
+                      <option value="0.1">0.1</option>
+                    </select> 
+            </div> 
+
+
+            <div class="form-group">
+                <label class="form-label" for="title">Location</label>
+                  <select class="select form-control">
+                        <option>-- Please make a selection --</option>
+                        <option value="Burnley">Burnley</option>
+                        <option value="Leeds">Leeds</option>
+                        <option value="London">London</option>
+                        <option value="Manchester">Manchester</option>
+                        <option value="Newcastle">Newcastle</option>           
+                    </select> 
+            </div>     
+
+       </div>
+
+       <div class="column-half">    
+
+          <br>
+
+              <div class="form-group">
+                <label class="form-label" for="job_role">Job Role</label>
+                    <select class="select form-control">
+                      <option>-- Please make a selection --</option>
+                      <option value="service_manager">Service Manager</option>
+                      <option value="product_owner">Product Owner</option>
+                      <option value="delivery_manager">Delivery Manager</option>
+                      <option value="business_analyst">Business Analyst</option>
+                      <option value="user_research">User Research</option>
+                      <option value="content_designer">Content Designer</option>
+                      <option value="software_developer">Software Developer</option>
+                      <option value="technical_architect">Technical Architect</option>
+                    </select> 
+            </div> 
+
+              <div class="form-group">
+                <label class="form-label" for="job_role">Skill Level</label>
+                    <select class="select form-control">
+                      <option>-- Please make a selection --</option>
+                      <option value="awareness">Awareness</option>
+                      <option value="working">Working</option>
+                      <option value="practitioner">Practitioner</option>
+                      <option value="expert">Expert</option>
+                    </select> 
+            </div> 
+
+      <div class="form-group">
+        
+     <div class="form-group" id="get-started">
+                      <a href="#" class="button button-get-started" value="Submit">Search</a>
+                  </div>
+
+        </div>    
+
+      </div>
+
+      <div class="column">   
+
+        <div class="column">   
+
+               <table>
+                    <thead>
+                      <tr>
+                        <th scope="col">Name</th>
+                        <th scope="col">Grade</th>
+                        <th scope="col">FTE</th>
+                        <th scope="col">Location</th>  
+                        <th scope="col">Job role</th>                     
+                        <th scope="col">Skill level</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                          <td><a href="assigned_holding">Abby Carr</a></td>
+                          <td>6</td>
+                          <td>1</td>
+                          <td>Leeds</td>
+                          <td>Delivery Manager</td>
+                          <td>Working</td>
+                        </tr>
+
+                        <tr>
+                          <td>Jack Jones</td>
+                          <td>SEO</td>
+                          <td>0.75</td>
+                          <td>Leeds</td>
+                          <td>Delivery Manager</td>
+                          <td>Practitioner</td>
+                        </tr>        
+
+                        <tr>
+                          <td>Steve Bell</td>
+                          <td>HEO</td>
+                          <td>1</td>
+                          <td>Leeds</td>
+                          <td>Business Analyst</td>
+                          <td>Practitioner</td>
+                        </tr>                 
+                        
+                        <tr>
+                          <td>Zoe Williams</td>
+                          <td>7</td>
+                          <td>0.9</td>
+                          <td>Leeds</td>
+                          <td>Business Analyst</td>
+                          <td>Working</td>
+                        </tr>
+
+                    </tbody>
+                </table>  
+
+                <br>
+                <br>
+
+         
+      </div>
+      <!-- End col -->
+
+
+
+
+    <!-- End row-->       
+      </div>
+
+
+</main>
+{{/content}}
+
+{{/layout}}
+
