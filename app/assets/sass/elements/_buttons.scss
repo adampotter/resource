@@ -78,6 +78,23 @@
   background-color: #AF1324
 }
 
+.mainbox {
+    background-color: #BFC1C3;
+    width: 50%;
+    font-weight: bold;
+    padding: 40px;
+    border: solid;
+    text-align: center;
+    border-color: #BFC1C3;
+    margin-left: 100px;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}
+
+.mainbox:hover {
+  background-color: #DEE0E2;
+  border-color: #DEE0E2;
+}
 
 
 
