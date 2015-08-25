@@ -1,0 +1,95 @@
+{{<layout}}
+
+{{$pageTitle}}
+  GOV.UK prototyping kit
+{{/pageTitle}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_navigation}}
+{{/propositionHeader}}
+
+{{$content}}
+
+
+<main id="content" role="main">
+
+ <div class="grid-row">        
+
+         <div class="column-quarter grid-col" style="padding-bottom:90px; padding-top:30px; margin-left:-40px">
+              <ul class="main-nav">
+                <li id="nav-home"><a href="logged_in">Home</a></li>
+                <li id="nav-demand" class="selected"><a href="demand">Demand log</a></li>
+                <li id="nav-unassigned"><a href="assigned">Assigned</a></li>
+                <li id="nav-assigned"><a href="#">Unassigned</a></li>
+                <li id="nav-reports"><a href="#">Reports</a></li>
+              </ul>
+          </div>
+
+
+  <!-- Start three quarters container for main content columns -->
+  <div class="column-three-quarters">
+
+
+        <p class="font-xsmall bread"><a href="logged_in">Home</a>&nbsp;>&nbsp;Demand log</p> 
+
+         <h1 class="heading-large">&nbsp;&nbsp;Demand log - Access to Work - Beta</h1>
+         <!-- <h2 class="bold-medium">If you have not done so already, below is a list of things we would like you to do before your jobseeker interview to improve your chances of finding work quickly.</h2> -->
+
+      <ul class="tabs">
+            <li><a href="demand">Basic search</a></li>
+            <li><a class="disabled" href="#">Edit record</a></li>
+            <li class="selected"><a href="demand_assign">Assign resource</a></li> 
+         </ul> 
+
+  <div class="column"> 
+
+<div class="column-half">
+
+    <h3 class="heading-medium">Add a new role:</h3> 
+
+              <div class="form-group">
+                <label class="form-label" for="job_role">Job Role</label>
+                    <select class="select form-control">
+                      <option>-- Please make a selection --</option>
+                      <option value="service_manager">Service Manager</option>
+                      <option value="product_owner">Product Owner</option>
+                      <option value="delivery_manager">Delivery Manager</option>
+                      <option value="business_analyst">Business Analyst</option>
+                      <option value="user_research">User Research</option>
+                      <option value="content_designer">Content Designer</option>
+                      <option value="software_developer">Software Developer</option>
+                      <option value="technical_architect">Technical Architect</option>
+                    </select> 
+            </div>
+
+
+        <div>
+          <a href="demand_assign_new_job" class="button button" value="add">Add</a>
+        </div>
+
+
+
+          <br>
+          <br> 
+
+    </div>
+
+                      <br>
+                      <br>
+
+         
+      </div>
+      <!-- End col -->
+
+
+
+
+    <!-- End row-->       
+      </div>
+
+
+</main>
+{{/content}}
+
+{{/layout}}
+
