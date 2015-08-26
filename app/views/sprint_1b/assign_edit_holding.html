@@ -1,0 +1,142 @@
+{{<layout}}
+
+{{$pageTitle}}
+  GOV.UK prototyping kit
+{{/pageTitle}}
+
+{{$propositionHeader}}
+  {{>includes/propositional_navigation}}
+{{/propositionHeader}}
+
+{{$content}}
+
+
+<main id="content" role="main">
+
+ <div class="grid-row">        
+
+           <div class="column-quarter grid-col" style="padding-bottom:90px; padding-top:30px; margin-left:-40px">
+              <ul class="main-nav">
+                <li id="nav-home"><a href="logged_in">Home</a></li>
+                <li id="nav-demand"><a href="demand">Demand</a></li>
+                <li id="nav-unassigned" class="selected"><a href="assigned">Assigned</a></li>
+                <li id="nav-assigned"><a href="#">Unassigned</a></li>
+                <li id="nav-reports"><a href="#">Reports</a></li>
+              </ul>
+          </div>
+
+  <!-- Start three quarters container for main content columns -->
+  <div class="column-three-quarters">
+
+
+        <p class="font-xsmall bread"><a href="logged_in">Home</a>&nbsp;>&nbsp;<a href="demand">Demand log</a></p> 
+
+         <h1 class="heading-large">&nbsp;&nbsp;Assigned resource - Abby Carr</h1>
+         <!-- <h2 class="bold-medium">If you have not done so already, below is a list of things we would like you to do before your jobseeker interview to improve your chances of finding work quickly.</h2> -->
+
+       <ul class="tabs">
+            <li><a href="demand">Basic search</a></li>
+            <li class="selected"><a href="#">Edit record</a></li>
+         </ul> 
+
+ <div class="column-half">   
+
+<h3 class="heading-small">Review changes:</h3> 
+
+           <div>
+                <table>
+                    <tr>
+                        <td>Name:</td>
+                        <td>Abby Carr</td>
+                    </tr>
+                   <tr>
+                    <td>Staff ID:</td>
+                        <td>100678</td>
+                    </tr>
+                    <tr>
+                        <td>Grade:</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Location:</td>
+                        <td>Leeds</td>
+                    </tr>
+                    <tr>
+                        <td>FTE:</td>
+                        <td>0.9</td>
+                    </tr>
+                    <tr>
+                        <td>Email:</td>
+                        <td>abby.carr@DWP.GSI.GOV.UK</td>
+                    </tr>                    
+                    <tr>
+                        <td>Phone number:</td>
+                        <td>07898567654</td>
+                    </tr>
+                    <tr>
+                        <td>Line manager email:</td>
+                        <td>toby.denton@DWP.GSI.GOV.UK</td>
+                    </tr>
+                    <tr>
+                        <td>Job role:</td>
+                        <td>Product Owner</td>
+                    </tr>
+                    <tr>
+                        <td>Skill level:</td>
+                        <td>Working</td>
+                    </tr>
+                    <tr>
+                        <td>Secotr knowledge:</td>
+                        <td>Disability</td>
+                    </tr>
+                    <tr>
+                        <td>Project:</td>
+                        <td>Access to Work</td>
+                    </tr>
+                    <tr>
+                        <td>Assignment start date:</td>
+                        <td>01/09/2015</td>
+                    </tr>
+                    <tr>
+                        <td>Assignment end date:</td>
+                        <td>01/07/2016</td>
+                    </tr>
+                    <tr>
+                        <td>Cost centre:</td>
+                        <td>100987</td>
+                    </tr>
+                    <tr>
+                        <td>Utilisation:</td>
+                        <td>3 days</td>
+                    </tr>
+                </table>
+           </div>  
+
+       <!-- End column-->       
+       </div>
+
+      <div class="column">
+        
+      <div>
+        <br>
+        <a href="assigned_edit" class="button button" value="Edit">Edit</a>
+        <a href="assigned" class="button button" value="Assign">Submit</a>
+      </div>
+
+
+                </div>
+
+  <!-- End three quarters column-->       
+   </div>  
+
+ 
+
+    <!-- End row-->       
+      </div>
+
+
+</main>
+{{/content}}
+
+{{/layout}}
+
