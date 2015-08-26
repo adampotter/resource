@@ -17,10 +17,10 @@
 
          <div class="column-quarter grid-col" style="padding-bottom:90px; padding-top:30px; margin-left:-40px">
               <ul class="main-nav">
-                <li id="nav-home" class="selected"><a href="login">Home</a></li>
+                <li id="nav-home"><a href="login">Home</a></li>
                 <li id="nav-demand"><a href="demand">Demand log</a></li>
                 <li id="nav-unassigned"><a href="assigned">Assigned</a></li>
-                <li id="nav-assigned"><a href="unassigned">Unassigned</a></li>
+                <li id="nav-assigned" class="selected"><a href="unassigned">Unassigned</a></li>
                 <li id="nav-reports"><a href="#">Reports</a></li>
               </ul>
           </div>
@@ -43,19 +43,28 @@
 
          <br>
 
+<h3 class="heading-small">Personal details:</h3>
+
             <div class="form-group">
                   <label class="form-hint" for="idoc">Name (read-only)</label>
                   <input class="form-control" id="idoc" type="text" value="Abby Carr" readonly>
              </div>    
 
             <div class="form-group">
-              <label class="form-label" for="inital">Email</label>
-              <input class="form-control" id="inital" type="text">
-            </div> 
+              <label class="form-label" for="staff">Staff ID</label>
+              <input class="form-control" id="staff" type="text">
+            </div>
 
-           <div class="form-group">
-              <label class="form-label" for="inital">Phone number</label>
-              <input class="form-control" id="inital" type="text">
+            <div class="form-group">
+                <label class="form-label" for="grade">Grade</label>
+                    <select class="select form-control">
+                      <option>-- Please make a selection --</option>
+                      <option value="6">6</option>
+                      <option value="7">7</option>
+                      <option value="SEO">SEO</option>
+                      <option value="HEO">HEO</option>
+                      <option value="EO">EO</option>
+                    </select> 
             </div>
 
             <div class="form-group">
@@ -67,9 +76,44 @@
                       <option value="London">London</option>
                       <option value="Manchester">Manchester</option>
                       <option value="Newcastle">Newcastle</option>
-
                     </select> 
             </div> 
+
+            <div class="form-group">
+                <label class="form-label" for="fte">FTE</label>
+                    <select class="select form-control">
+                      <option>-- Please make a selection --</option>
+                      <option value="1">1</option>
+                      <option value="0.9">0.9</option>
+                      <option value="0.8">0.8</option>
+                      <option value="0.7">0.7</option>
+                      <option value="0.6">0.6</option>
+                      <option value="0.5">0.5</option>
+                      <option value="0.4">0.4</option>
+                      <option value="0.3">0.3</option>
+                      <option value="0.2">0.2</option>
+                      <option value="0.1">0.1</option>
+                    </select> 
+            </div>
+
+<h3 class="heading-small">Contact details:</h3>
+
+            <div class="form-group">
+              <label class="form-label" for="email">Email</label>
+              <input class="form-control" id="email" type="text">
+            </div> 
+
+           <div class="form-group">
+              <label class="form-label" for="phone-number">Phone number</label>
+              <input class="form-control" id="phone-number" type="text">
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="lm-email">Line manager email</label>
+              <input class="form-control" id="lm-email" type="text">
+            </div> 
+
+
 
                       <br>
         <div>
@@ -83,19 +127,9 @@
       <!-- Start col -->      
       <div class="column-half">    
           
-          <br>
-            <div class="form-group">
-                <label class="form-label" for="Project">Project</label>
-                    <select class="select form-control">
-                      <option>-- Please make a selection --</option>
-                      <option value="ATW">Access to Work</option>
-                      <option value="DSC">Digital Service centre</option>
-                      <option value="EJS">Enhancing Job Seekers Services</option>
-                      <option value="e-Payments">e-Payments</option>
-                      <option value="PIP">PIP Digital</option>
+         <br>
 
-                    </select> 
-            </div>
+<h3 class="heading-small">Role:</h3>
 
 
               <div class="form-group">
@@ -111,7 +145,7 @@
                       <option value="software_developer">Software Developer</option>
                       <option value="technical_architect">Technical Architect</option>
                     </select> 
-            </div> 
+            </div>
 
               <div class="form-group">
                 <label class="form-label" for="job_role">Skill Level</label>
@@ -122,7 +156,110 @@
                       <option value="practitioner">Practitioner</option>
                       <option value="expert">Expert</option>
                     </select> 
+            </div>
+
+              <div class="form-group">
+                <label class="form-label" for="job_role">Sector Knowledge</label>
+                    <select class="select form-control">
+                      <option>-- Please make a selection --</option>
+                      <option value="awareness">Awareness</option>
+                      <option value="working">Working</option>
+                      <option value="practitioner">Practitioner</option>
+                      <option value="expert">Expert</option>
+                    </select> 
+            </div>
+
+
+<h3 class="heading-small">Assignment:</h3>
+
+            <div class="form-group">
+                <label class="form-label" for="Project">Project</label>
+                    <select class="select form-control">
+                      <option>-- Please make a selection --</option>
+                      <option value="ATW">Access to Work</option>
+                      <option value="DSC">Digital Service centre</option>
+                      <option value="EJS">Enhancing Job Seekers Services</option>
+                      <option value="e-Payments">e-Payments</option>
+                      <option value="PIP">PIP Digital</option>
+
+                    </select> 
             </div>  
+
+      <div class="form-group">
+        <fieldset class="inline">
+          <legend class="form-label">Assignment start date</legend>
+
+
+          <div class="form-date">
+            <div class="form-group form-group-day">
+                    <select class="select form-control">
+                                <option selected disabled>Day</option>
+                                <option value="01">1</option>
+                                <option value="02">2</option>
+                                <option value="03">3</option>
+                                <option value="04">4</option>
+                                <option value="05">5</option>
+                                <option value="06">6</option>
+                                <option value="07">7</option>
+                                <option value="08">8</option>
+                                <option value="09">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                                <option value="13">13</option>
+                                <option value="14">14</option>
+                                <option value="15">15</option>
+                                <option value="16">16</option>
+                                <option value="17">17</option>
+                                <option value="18">18</option>
+                                <option value="19">19</option>
+                                <option value="20">20</option>
+                                <option value="21">21</option>
+                                <option value="22">22</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                                <option value="28">28</option>
+                                <option value="29">29</option>
+                                <option value="30">30</option>
+                                <option value="31">31</option>
+                    </select>
+            </div>
+
+
+            <div class="form-group form-group-month">
+                    <select class="select form-control">
+                                <option selected disabled>Month</option>
+                                <option value="01">Jan</option>
+                                <option value="02">Feb</option>
+                                <option value="03">Mar</option>
+                                <option value="04">Apr</option>
+                                <option value="05">May</option>
+                                <option value="06">Jun</option>
+                                <option value="07">Jul</option>
+                                <option value="08">Aug</option>
+                                <option value="09">Sep</option>
+                                <option value="10">Oct</option>
+                                <option value="11">Nov</option>
+                                <option value="12">Dec</option>                            
+                    </select>
+            </div>
+
+            <div class="form-group form-group-month">
+                                <select class="select form-control">
+                                <option selected disabled>Year</option>
+                                <option value="15">2015</option>
+                                <option value="16">2016</option>                           
+                    </select>
+            </div>
+          </div>
+        </div>
+        </fieldset>
+
+
+
 
       <div class="form-group">
         <fieldset class="inline">
@@ -194,7 +331,25 @@
                     </select>
             </div>
           </div>
+        </div>
         </fieldset>
+
+            <div class="form-group">
+              <label class="form-label" for="cost-centre">Cost centre</label>
+              <input class="form-control" id="cost-centre" type="text">
+            </div>
+
+              <div class="form-group">
+                <label class="form-label" for="job_role">Utilisation</label>
+                    <select class="select form-control">
+                      <option>-- Please make a selection --</option>
+                      <option value="awareness">1 day</option>
+                      <option value="working">2 days</option>
+                      <option value="practitioner">3 days</option>
+                      <option value="expert">4 days</option>
+                      <option value="expert">5 days</option>                      
+                    </select> 
+            </div>
 
 
       </div>
