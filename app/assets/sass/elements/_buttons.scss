@@ -79,21 +79,21 @@
 }
 
 .mainbox {
-    background-color: #BFC1C3;
-    width: 50%;
+    background-color: #f8f8f8;
+    border-color: 10px white;
+    display: block;
     font-weight: bold;
     padding: 40px;
-    border: solid;
     text-align: center;
-    border-color: #BFC1C3;
     margin-left: 100px;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     margin-top: 40px;
+    text-decoration: none;
 }
 
 .mainbox:hover {
   background-color: #DEE0E2;
-  border-color: #DEE0E2;
+  border-bottom: 5px solid #BFC1C3;
 }
 
 a.mainbox {
@@ -101,6 +101,64 @@ a.mainbox {
     height: 100%;
     width: 100%;
     text-decoration: none;
+}
+
+// EJS File function buttons
+
+.grid {
+  float:left;
+  overflow:hidden;
+}
+
+.grid-1-2 {
+  width:50%;
+}
+
+.grid-1-4 {
+  width:25%;
+}
+
+.grid-1-5 {
+  width:20%;
+}
+
+.grid-1-15 {
+  width:15%;
+}
+
+.grid-1-10 {
+  width:10%;
+}
+
+.left {
+  margin-right:15px;
+  .pdf {
+        margin-left:15px;
+        background:#f8f8f8;
+        border: 1px solid #bfc1c3;
+      }
+}
+
+.menu-item {
+    background: #f8f8f8;
+    border-bottom: 1px solid #bfc1c3;
+    display: block;
+    padding: 15px 15px 0px 15px;
+    min-height: 2em;
+    margin-bottom: 15px;
+    text-decoration: none;
+    white-space: nowrap;
+    margin-left: 15px;
+      a:active {
+      padding: 15px 0 0 0;
+    }
+}
+
+.grid .selected {
+  background: #f2f0f0;
+  min-height: 1.85em;
+  border-bottom: 5px solid #969799 !important;
+  margin-bottom: 11px !important;
 }
 
 
